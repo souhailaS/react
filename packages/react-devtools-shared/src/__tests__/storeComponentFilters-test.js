@@ -244,6 +244,7 @@ describe('Store component filters', () => {
     }
   });
 
+  // @reactVersion >= 18.0
   it('should filter ViewTransition', async () => {
     const ViewTransition = React.unstable_ViewTransition;
 

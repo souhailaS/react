@@ -43,6 +43,7 @@ import {
   ComponentFilterElementType,
   ComponentFilterLocation,
   ElementTypeHostComponent,
+  ElementTypeViewTransition,
 } from './frontend/types';
 import {
   ElementTypeRoot,
@@ -340,6 +341,11 @@ export function getDefaultComponentFilters(): Array<ComponentFilter> {
     {
       type: ComponentFilterElementType,
       value: ElementTypeHostComponent,
+      isEnabled: true,
+    },
+    {
+      type: ComponentFilterElementType,
+      value: ElementTypeViewTransition,
       isEnabled: true,
     },
   ];
